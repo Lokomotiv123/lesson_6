@@ -1,0 +1,255 @@
+/* підключаю шрифти */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+/* стилі макету OnlineCourse */
+
+
+.main-part {
+	font-family: "Lato", serif;
+	max-width: 810px;
+	margin: 0 auto;
+}
+
+
+[class="zmist"] {
+	padding-top: 50px;
+	max-width: 600px;
+	margin: 0 auto;
+	max-height: 190px;
+
+}
+
+.zmist h2 {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 20px;
+	color: rgba(245, 25, 25, 0.793);
+
+	
+}
+
+li {
+	font-size: 20px;
+	color: blue;
+	text-decoration: underline;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+/* питання до ширин та відступу */
+.zagolovok {
+	min-height: 60px;
+	margin-bottom: 92px;
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	text-align: left;
+	color: #1E212C;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.picture {
+	margin-bottom: 48px;
+
+}
+
+.picture img{
+	max-width: 100%;
+}
+.block1 {
+	
+	min-height: 90px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	margin-left: 3px;
+	margin-bottom: 36px;
+	color: #1E212C;
+}
+.block2 {
+	
+	min-height: 182px;
+	margin-bottom: 48px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+}
+
+.block2-text {
+	margin-bottom: 28px;
+}
+
+.block3 {
+	max-width: 752px;
+	min-height: 120px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-left: 58px;
+	margin-bottom: 48px;
+}
+.block4 {
+	min-height: 52px;
+	margin-bottom: 24px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+}
+.table {
+	max-width: 600px;
+	min-height: 116px;
+	margin-bottom: 24px;
+}
+.table li {
+	margin-left: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25.6px;
+	color: #424551;
+}
+.block5 {
+	min-height: 104px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25.6px;
+	margin-bottom: 200px;
+
+}
+
+/* 
+2) На тій же сторінці проробляємо усі властивості з 6го уроку
+3) Експериментуємо
+
+*/
+
+#experiment{
+	border-top: 5px dashed red;
+	min-height: 1000px;
+	margin: 0 auto;
+}
+
+.nambering {
+	font-family: "Lato", serif;
+	font-size: 40px;
+	font-weight: 900;
+	margin-top: 50px;
+	color: rgba(0, 0, 255, 0.549);
+	text-align: center;
+	margin-bottom: 50px;
+	
+}
+
+.nlaw {
+	height: 400px;
+	max-width: 400px;
+	background-color: bisque;
+	overflow: hidden;
+	margin: 0 auto;
+	border-top: 5px solid #000;
+	border-left: 10px double rgba(141, 29, 29, 0.84);
+	border-right: 25px dashed green;
+	border-bottom: 15px dotted blue;
+	padding: 10px;
+
+}
+
+/* експеримент 2 */
+
+/* Селектор імені атрибуту та його 
+значення за умови - [attr^=value] {}
+Запит до усіх елементів з ім'ям атрибуту attr, значення якого 
+починається з value */
+
+[title^="другий"] {
+width: 400px;
+outline: 10px double green;
+margin: 0 0 0 auto;
+margin-right: 20px;
+
+}
+
+/* Селектор імені атрибуту та його 
+значення за умови - [attr$=value] {}
+Запит до усіх елементів з ім'ям атрибуту attr, 
+значення якого закінчується на value */
+
+[class$="item"] {
+	background-color: rgb(141, 43, 127);
+	margin-bottom: 10px;
+	max-height: 100px;
+	overflow: scroll;
+	display: inline;
+}
+
+
+[title^="другий"] span {
+	background-color: rgb(68, 212, 20);
+	display: inline-block;
+	margin-bottom: 10px;
+	max-height: 60px;
+	margin-top: 50px;
+	overflow: auto;
+	max-width: 180px;
+	outline: 5px solid red;
+}
+
+[class$="item"] + span {
+	background-color: rgb(43, 90, 141);
+	display: inline;
+	outline: 5px dashed blue;
+	
+}
+
+/* експеримент 3  */
+
+.circle{
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	background-color: #17eb08;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	opacity: 0.3;
+	box-shadow: 4px 4px 0px 26px rgba(0,0,0,0.68), 4px 4px 136px 26px rgb(250, 20, 4);
+}
+
+.figure{
+	width: 400px;
+	height: 500px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.697);
+	border-radius: 62% 38% 81% 19% / 35% 60% 40% 65% ;
+	opacity: 0.5;
+	box-shadow:  -111px 41px 33px -7px rgba(179,14,179,0.5), 125px 41px 119px 6px rgba(114,201,83,1);
+	margin-bottom: 150px;
+
+}
+
+/* експеримент 4 */
+
+.button {
+	display: block;
+	width: 250px;
+	height: 250px;
+	background-color: red;
+	padding-top: 80px;
+	color: white;
+	text-align: center;
+	font-size: 80px;
+	font-weight: 900;
+	border-radius: 50%;
+	box-shadow: 5px 8px 3px -1px rgba(19,191,42,1);
+	transition: all 0.3s ease 0s;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.button:hover{
+	margin-top: 3px;
+	box-shadow: 2px 2px 1px -2px rgba(19,191,42,1);
+	
+}
